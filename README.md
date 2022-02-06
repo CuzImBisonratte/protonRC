@@ -1,6 +1,6 @@
-# Kwikjet 
+# protonRC 
 
-This is the website for kwikjet.
+This is the website for protonRC.
 
 
 # Live version
