@@ -75,6 +75,10 @@ a {
     padding-top: 25%;
 }
 
+.product_text>h1 {
+    text-decoration: underline 5px;
+}
+
 .text a {
     font-size: 3vh;
     color: #4fbdba;
