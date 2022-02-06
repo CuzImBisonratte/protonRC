@@ -85,6 +85,8 @@ a {
     background-color: #072227;
     border: none;
     color: #4fbdba;
+    cursor: pointer;
+    border-radius: 100vh;
 }
 
 .image {
