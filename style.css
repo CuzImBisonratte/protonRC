@@ -78,7 +78,7 @@ a {
 }
 
 .product_text>h1 {
-    text-decoration: underline 5px;
+    text-decoration: underline #7a00ff 5px;
 }
 
 .text a {
@@ -113,7 +113,7 @@ a {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 10px 40px 0 rgba(120, 0, 255, 0.37);
 }
 
 .angled {
