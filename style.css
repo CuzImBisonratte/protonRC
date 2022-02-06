@@ -101,10 +101,12 @@ a {
     border-radius: 1.5vh;
     padding: 0.5vh 1.5vh;
     margin: auto;
+    background-color: rgba(230, 248, 246, 0.05);
 }
 
 .image {
     grid-area: image;
+    background-color: rgba(230, 248, 246, 0.10);
 }
 
 .image img {
@@ -118,7 +120,6 @@ a {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 10px 40px 0 rgba(120, 0, 255, 0.37);
-    background-color: rgba(230, 248, 246, 0.05);
     position: relative;
 }
 
