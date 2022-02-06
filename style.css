@@ -8,6 +8,8 @@ body {
     background: radial-gradient(#aefeff, #4fbdba, #35858b, #072227);
     height: 100%;
     transition: 0.5s;
+    margin: 0;
+    text-align: center;
 }
 
 .body_nav_opened {
@@ -104,4 +106,17 @@ a {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+footer {
+    text-align: center;
+    background-color: #072227;
+    color: aliceblue;
+    margin: 2vh 0 0 0;
+    padding: 2vh;
+}
+
+.under_footer {
+    text-align: center;
+    margin-bottom: 1vh;
 }
