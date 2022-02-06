@@ -2,10 +2,12 @@
 * {
     scroll-behavior: smooth;
     font-family: 'Open Sans', monospace;
+    color: #aaaaaa;
 }
 
 body {
-    background: radial-gradient(#aefeff, #4fbdba, #35858b, #072227);
+    /* background: radial-gradient(#aefeff, #4fbdba, #35858b, #072227); */
+    background-color: #383e42;
     height: 100%;
     transition: 0.5s;
     margin: 0;
