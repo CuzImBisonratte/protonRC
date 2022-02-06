@@ -64,7 +64,7 @@ a {
 }
 
 .container {
-    margin-top: 2.5vh;
+    margin-top: 20vh;
     width: 100%;
     height: 100%;
     display: grid;
@@ -118,6 +118,20 @@ a {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 10px 40px 0 rgba(120, 0, 255, 0.37);
+    background-color: rgba(230, 248, 246, 0.05);
+    position: relative;
+}
+
+.glass::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(120, 0, 255, 0.27);
+    top: 115%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    transform: perspective(1em) rotateX(40deg) scale(0.7, 0.25);
+    filter: blur(2em);
 }
 
 .angled {
