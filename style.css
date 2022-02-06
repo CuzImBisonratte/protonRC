@@ -116,7 +116,13 @@ a {
     transform-style: preserve-3d;
     transform: rotateX(-20deg) rotateY(-20deg);
 }
+
 footer {
+    padding-top: 10vh;
+}
+
+.footer_text {
+    margin-top: 20vh;
     text-align: center;
     background-color: #072227;
     color: aliceblue;
