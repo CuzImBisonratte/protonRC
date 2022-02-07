@@ -58,6 +58,16 @@ nav ul li {
     margin-right: 2vh;
 }
 
+#nav_menu {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#nav_menu li {
+    display: inline-block;
+    margin-right: 2vh;
+}
+
 a {
     text-decoration: none;
     /* color: black; */
