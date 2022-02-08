@@ -25,11 +25,13 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    padding: 2vh;
+    padding: 1vh;
+    height: 5vh;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border-bottom: 0.25vh solid rgba(255, 255, 255, 0.18);
+    background-color: rgba(230, 248, 246, 0.025);
 }
 
 .navbar i {
