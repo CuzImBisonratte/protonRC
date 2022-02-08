@@ -157,7 +157,7 @@ a {
 .glass {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 10px 40px 0 rgba(120, 0, 255, 0.37);
     position: relative;
