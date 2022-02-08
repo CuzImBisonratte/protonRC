@@ -53,9 +53,21 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul li {
+ul li {
     display: inline-block;
     margin-right: 2vh;
+    padding: 1vh;
+}
+
+ul>li:hover {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 7.5vw;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: relative;
+    background-color: #383e42;
 }
 
 #nav_menu {
