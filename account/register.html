@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>protonRC - Register</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href="login_style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="login">
+
+        <!-- Header -->
+        <h1>Create account</h1>
+        <hr>
+
+        <!-- The form -->
+        <form action="register.php" method="post">
+
+            <!-- Username field -->
+            <input type="text" name="email" placeholder="E-Mail" id="email" required>
+
+            <!-- Username field -->
+            <input type="text" name="username" placeholder="Username" id="username" required>
+
+            <!-- Password field -->
+            <input type="password" name="password" placeholder="Password" id="password" required>
+
+            <!-- Login-knopf -->
+            <input type="submit" value="Create Account">
+
+            <!-- Zum Registrieren -->
+        </form>
+        <br>
+        <br>
+        <span id="linkToOther" onclick='window.location.assign("login.html")'>Login to existing Account</span>
+    </div>
+    <!-- Load all needed scripts -->
+    <script src="formular_themes.js"></script>
+</body>
+
+</html>
