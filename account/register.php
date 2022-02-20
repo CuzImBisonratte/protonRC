@@ -2,11 +2,11 @@
 
     // Get login form input
     $email = $_POST['email'];
-    $user_password = $_POST['password'];
-    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $db_username = $_POST['username'];
 
     // Check if all fields are filled
-    if (empty($email) || empty($user_password) || empty($username)) {
+    if (empty($email) || empty($password) || empty($db_username)) {
         header("Location: ./register.html?error=emptyfields");
         exit();
     } else {
@@ -18,7 +18,7 @@
         session_start();
 
         // Create connection
-        $con = new mysqli($host, $user, $password, $database);
+        $con = new mysqli($db_host, $db_user, $db_pass, $db_db);
 
         // Check connection
         if ($con->connect_error) {
@@ -40,7 +40,7 @@
                 $stmt->store_result();
 
                 // Hash the password
-                $user_password = password_hash($user_password, PASSWORD_DEFAULT);
+                $password = password_hash($password, PASSWORD_DEFAULT);
 
                 // Check if an account with the email exists
                 if ($stmt->num_rows == 1) {
@@ -54,7 +54,7 @@
                     if ($stmt = $con->prepare('INSERT INTO accounts (email, password, username) VALUES (?, ?, ?)')) {
 
                         // Bind email param
-                        $stmt->bind_param('sss', $email, $user_password, $username);
+                        $stmt->bind_param('sss', $email, $password, $db_username);
 
                         // Execute the SQL
                         $stmt->execute();

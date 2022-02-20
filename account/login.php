@@ -17,7 +17,7 @@
         session_start();
 
         // Create connection
-        $con = new mysqli($host, $user, $password, $database);
+        $con = new mysqli($db_host, $db_user, $db_pass, $db_db);
 
         // Check connection
         if ($con->connect_error) {

@@ -1,8 +1,8 @@
 <?php 
 
-    $host = "localhost";
-    $user = "root";
-    $password = "";
-    $database = "protonrc";
+    $db_host = "localhost";
+    $db_user = "root";
+    $db_pass = "";
+    $db_db = "protonrc";
 
 ?>
