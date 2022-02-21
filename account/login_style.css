@@ -29,6 +29,10 @@ html {
     margin: auto;
 }
 
+hr {
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+}
+
 body {
     background-color: #282C36;
     transition: 1s;
@@ -47,8 +51,8 @@ body {
     height: 50%;
     background-color: #282C36;
     padding: 2vh;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    border-radius: 2em;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
 }
 
 input {
@@ -59,4 +63,5 @@ input {
     border-radius: 0.5em;
     padding: 1vh;
     margin-top: 5%;
+    border: 0.1em solid rgba(255, 255, 255, 0.5);
 }
