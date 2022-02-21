@@ -61,14 +61,14 @@
 
 <body>
     <div class="container">
-        <div class="user">
+        <div id="name" class="user">
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png?20200919003010">
             </div>
-            <div class="name">
+            <div id="name_field" class="name">
                 <?= $name ?>
             </div>
-            <div class="email">
+            <div id="email_field" class="email">
                 <?= $email ?>
             </div>
         </div>
@@ -113,7 +113,32 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        user_element = document.getElementById("name");
+        name_element = document.getElementById("name_field");
+
+        // Add event listener hover
+        user_element.addEventListener("mouseover", function() {
+
+            // Change the text of the element
+            name_element.innerHTML = "<span style='text-decoration: underline;'>Logout</span>";
+
+        });
+
+        user_element.addEventListener("mouseout", function() {
+
+            // Change the text of the element
+            name_element.innerHTML = '<?PHP echo $name; ?>';
+        });
+
+        name_element.addEventListener("click", function() {
+
+            // Change the text of the element
+            window.location.href = 'logout.php';
+
+        });
+    </script>
+    
 </body>
 
 </html>
