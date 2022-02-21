@@ -1,3 +1,52 @@
+<?php 
+
+    // Start session
+    session_start();
+
+    // Check if user is logged in
+    if(!isset($_SESSION['loggedin'])) {
+        header("Location: login.html");
+    }
+
+    // Get the database credentials
+    require_once './credentials.php';
+
+    // Get user id
+    $id = $_SESSION['id'];
+
+    // Create connection
+    $con = new mysqli($db_host, $db_user, $db_pass, $db_db);
+
+    // Check connection
+    if ($con->connect_error){
+        die("SQL connection failed: " . $con->connect_error);
+    } else {
+
+        // Prepare the SQL to get users name and mail
+        if ($stmt = $con->prepare('SELECT username, email FROM accounts WHERE id = ?')) {
+
+            // Bind user id param
+            $stmt->bind_param('i', $id);
+
+            // Execute the SQL
+            $stmt->execute();
+
+            // Get the result
+            $stmt->store_result();
+
+            // Bind the result
+            $stmt->bind_result($name, $email);
+
+            // Fetch the result
+            $stmt->fetch();
+
+            // Close the SQL
+            $stmt->close();
+        }
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -17,10 +66,10 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png?20200919003010">
             </div>
             <div class="name">
-                Max Mustermann
+                <?= $name ?>
             </div>
             <div class="email">
-                mustermail@muster.de
+                <?= $email ?>
             </div>
         </div>
         <div class="tabs">
