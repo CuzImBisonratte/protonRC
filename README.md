@@ -1,6 +1,6 @@
 # protonRC 
 
-This is the website for protonRC.
+This is a sample website for protonRC.
 
 
 # Live version
